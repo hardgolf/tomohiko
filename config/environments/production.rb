@@ -76,4 +76,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Devise authentication for mailing
+  config.action_mailer.default_url_options = { :host => 'tomohiko-env.ap-southeast-1.elasticbeanstalk.com' }
 end
